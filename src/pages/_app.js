@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }) {
           <Link href='/'>
           <Logo />
           </Link>
-          <h1 className="text=[18px]   font-normal breeak-all pt-4">
+          <h1 className="text=[18px] text-poppins  font-normal break-all pt-4">
             Conneect with parents <br />
             who just get it!
           </h1>
@@ -22,20 +22,20 @@ export default function App({ Component, pageProps }) {
 
         <div className="mt-44">
           <QRCode />
-          <h1 className="text-[15px] font-semibold pt-4">
+          <h1 className="text-[15px] text-poppins font-semibold pt-4">
             Scan the QR code <br />
             and Explore our app
           </h1>
-          <p className="text-[13px] pt-1 font-normal">Available for IOS & Android</p>
+          <p className="text-[13px] text-poppins pt-1 font-normal">Available for IOS & Android</p>
         </div>
 
 
         <div className="mt-24">
           <p className="pb-2">2023 kindship</p>
           <div className=" gap-4">
-          <Link href="#" className="font-normal text-[14px] text-[#767678]">About app</Link>
-          <Link href="#" className="font-normal pl-3 text-[14px] text-[#767678]">Privacy Policy</Link> <br />
-          <Link href="#" className="font-normal text-[14px] text-[#767678]">Terms</Link>
+          <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">About app</Link>
+          <Link href="#" className="font-normal text-poppins pl-3 text-[14px] text-[#767678]">Privacy Policy</Link> <br />
+          <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">Terms</Link>
           </div>
         </div>
       </div>
