@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import React, { useRef, useState, useEffect } from 'react'; 
+import { Swiper, SwiperSlide } from 'swiper/react'; 
+import 'swiper/css';
+import 'swiper/css/pagination'; 
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -38,7 +38,7 @@ export default function App() {
     const videoElements = Array.from(document.querySelectorAll(".video-slide"));
 
     videoElements.forEach((video, index) => {
-      if (index === activeIndex + 1) {
+      if (index === activeIndex ) {
         video.play();
       } else {
         video.pause();
@@ -47,14 +47,14 @@ export default function App() {
   }, [activeIndex]);
 
   const handleMouseEnter = (index) => {
-    if (index === activeIndex + 1) {
+    if (index === activeIndex ) {
       const video = document.querySelector(`.video-slide-${index}`);
       video.play();
     }
   };
 
   const handleMouseLeave = (index) => {
-    if (index === activeIndex + 1) {
+    if (index === activeIndex ) {
       const video = document.querySelector(`.video-slide-${index}`);
       video.pause();
       video.currentTime = 0;
@@ -64,13 +64,25 @@ export default function App() {
   return (
     <>
       <Swiper
-        spaceBetween={10}
+        slidesPerView={4}
+        centeredSlides={true}
+        spaceBetween={30}
+        grabCursor={true}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         pagination={{
           clickable: true,
         }}
-        loop={true}
+        modules={[Autoplay, Navigation, Pagination]}
+        className="mySwiper"
         onSlideChange={handleSlideChange}
         breakpoints={{
+          260: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
           640: {
             slidesPerView: 1,
             spaceBetween: 20,
@@ -83,25 +95,23 @@ export default function App() {
             slidesPerView: 3,
             spaceBetween: 20,
           },
-        }}
-        modules={[Pagination]}
-        className="mySwiper"
+        }}  
       >
         {videos.map((video, index) => (
           <SwiperSlide key={index}>
             <div
-              className={`relative ${index === activeIndex + 1 ? "" : ""}`}
+              className={`relative ${index === activeIndex  ? "" : ""}`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
             >
               <video
-                autoPlay={index === activeIndex + 1}
+                autoPlay={index === activeIndex }
                 muted
                 playsInline
                 loop={false}
                 className={`video-slide bg-top bg-contain object-contain	h-full video-slide-${index}`}
                 style={
-                  index === activeIndex + 1
+                  index === activeIndex 
                     ? {
                         width: "100%",
                         height: "auto",

@@ -2,9 +2,10 @@ import "@/styles/globals.css";
 import { Fragment } from "react";
 import Logo from "@/icons/Logo";
 import QRCode from "@/icons/Qr";
-import Link from "next/link";
+import Link from "next/link"; 
 
 export default function App({ Component, pageProps }) {
+ 
   return (
     <Fragment>
       <div className="max-w-7xl mx-auto py-16 flex sm:px-8 px-3">
@@ -42,7 +43,7 @@ export default function App({ Component, pageProps }) {
 
       {/* Main Content */}
       <div className="w-full p-8 overflow-scroll rounded-md bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
-        <Component />
+        <Component {...pageProps} />
       </div>
       </div>
     </Fragment>
