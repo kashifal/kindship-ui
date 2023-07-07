@@ -1,19 +1,32 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import Input from "@/components/Input";
 import VerifyPhone from "./VerifyPhone";
 
-const RegisterPhone = () => {
+const RegisterPhone = ({getIndex, formCount}) => {
   const [phoneForm, setPhoneForm] = useState({
     phone: "",
   });
 
+
+
+  useEffect(() => {
+   
+    setTimeout(() => {
+      getIndex(1)
+    }, 6000)
+  
+  },[phoneForm.phone])
+
+
+
+
   return (
     <Fragment>
-      <div className="">
+      <div>
         <div>
-          <div className="">
+          <div className={formCount === 0 ? "block" : "hidden"}>
             <Headline text="Hey there! What's your number?" />
             <div className="max-w-2xl  mx-auto py-4">
               <Paragraph paragraph="Yep, we ask for it straight away. This helps us weed out the weirdos and keep you and your data safe. We'll send you an SMS message to double check we've got it right." />
@@ -66,13 +79,13 @@ const RegisterPhone = () => {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-[#FB3131] text-[15px] pt-1 hidden">jjjj</p>
+                  <p className="text-[#FB3131] text-[15px] pt-1 ">Oops, that doesn't look right. Please try again</p>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <VerifyPhone />
+        {/* <VerifyPhone /> */}
       </div>
     </Fragment>
   );

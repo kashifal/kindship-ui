@@ -3,7 +3,7 @@ import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import { useForm } from "react-hook-form";
 
-const NameForm = () => {
+const NameForm = ({getIndex, formCount}) => {
   const [nameForm, setNameForm] = useState({
     fname: "",
     lname: "",
@@ -12,11 +12,12 @@ const NameForm = () => {
 
 
   const handleSubmit  = () => {
+    getIndex(2);
     console.log('form added');
   }
 
   return (
-    <div className="">
+    <div className={formCount === 1 ? "block" : "hidden"}>
       <Headline text="Welcome! We're so happy you're here." />
       <Paragraph paragraph="What should we call you?" />
       <form onSubmit={() => handleSubmit()}>

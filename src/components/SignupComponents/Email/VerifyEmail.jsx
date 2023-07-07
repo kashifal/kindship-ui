@@ -3,7 +3,7 @@ import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import { useForm } from "react-hook-form";
 
-const verifyEmail = () => {
+const verifyEmail = ({getIndex,formCount}) => {
   const [nameForm, setNameForm] = useState({
     email:''
   });
@@ -11,11 +11,11 @@ const verifyEmail = () => {
 
 
   const handleSubmit  = () => {
-    console.log('form added');
+    getIndex(3)
   }
 
   return (
-    <div className="">
+    <div className={formCount === 2 ? "block" : "hidden"}>
       <Headline text="What's your email?" />
       <Paragraph paragraph="We'll send you a copy of the service agreement. 
 (And important emails now and then)" />
