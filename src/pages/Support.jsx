@@ -70,6 +70,7 @@ const Support = () => {
 
         </div>
         </div>
+         
   
     </Fragment>
   )

@@ -3,16 +3,20 @@ import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
 
-const ConnectNdis = () => {
+const ConnectNdis = ( {getIndex,formCount}) => {
   const [ndForm, setNdForm] = useState({
     lname: "",
     dob: "",
     ndis: "",
   });
 
+
+  const handleSubmit = () => {
+    getIndex(4);
+  }
   return (
     <Fragment>
-      <div className="">
+      <div className={formCount === 3 ? "block" : "hidden"}>
         <div>
           <div className="">
             <Headline text="This'll just take a minute." />
@@ -174,13 +178,13 @@ const ConnectNdis = () => {
                   able to add more children later.
                 </p>
 
-                <button type="submit" className={ "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md mt-10 font-semibold text-[19px]"}>Agree and continue</button>
+                <button   type="submit" className={ndForm.ndis === '' ?  "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md mt-10 font-semibold text-[19px]" : "w-full py-3 bg-primary text-white rounded-md mt-10 font-semibold text-[19px]"}>Agree and continue</button>
 
                 <p className="text-black text-[15px] text-center font-normal pt-4">
                 By tapping "Agree and continue" you agree to our
                 </p>
                 <div className="flex">
-                <Link className="text-center text-primary w-full mx-auto text-[15px]" href="#">Service Agreement</Link>
+                <Link className="text-center text-primary w-full mx-auto text-[15px]" href="/Terms">Service Agreement</Link>
                 </div>
               </div>
             </form>
