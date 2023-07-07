@@ -151,3 +151,11 @@ flex-shrink: 0;
   font-family: 'Poppins', sans-serif;
 
   }
+
+  .parent
+  {
+    width: 30px;
+    height: 30px;
+    border-radius: 100px;
+    background:  lightgray -151.394px -0.182px / 483.653% 245.138% no-repeat;
+  }

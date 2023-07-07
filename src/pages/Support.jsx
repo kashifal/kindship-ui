@@ -3,6 +3,7 @@ import RoundLogo from '@/icons/RoundedLogo';
 import Paragraph from '@/components/Paragraph';
 import Headline from '@/components/Headline';
 import Link from "next/link";
+import ArrowUp from '@/icons/ArrowUp';
 
 
 
@@ -10,13 +11,14 @@ import Link from "next/link";
 const Support = () => {
   return (
     <Fragment>
+      
        <div className="flex flex-col py-12 px-8">
         <div className='mx-auto'><RoundLogo /></div>
         <h1 className="text-primary text-center text-[30px] font-bold">Kindship Premium</h1>
         <Paragraph paragraph="We've started working with you right now!" />
        </div>
 
-    <div className="grid grid-cols-2 gap-3 ">
+    <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 ">
     <div className="rounded-lg ring-1 px-5 py-4 ring-gray-200">
        <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +34,7 @@ const Support = () => {
       ></path>
     </svg>
 
-    <h1 className="text-[21px] py-2 font-semibold">Payment Provider</h1>
+    <h1 className="text-[21px]  pt-6 font-semibold">Payment Provider</h1>
     <p className="text-[19px] text-[#000]">Coming soon</p>
        </div>
        <div className="rounded-lg ring-1 px-5 py-4 ring-gray-200">
@@ -50,7 +52,7 @@ const Support = () => {
       ></path>
     </svg>
 
-    <h1 className="text-[21px] py-2 font-semibold">Personalised templates</h1>
+    <h1 className="text-[21px] text-[21px]  pt-6 font-semibold font-semibold">Personalised templates</h1>
     <p className="text-[19px] text-[#000]">Coming soon</p>
        </div>
 
@@ -59,13 +61,26 @@ const Support = () => {
 
 
 
-       <div className='bg-[#FBF0EB] rounded-lg px-8 py-8  my-12'>
+       <div className='bg-[#FBF0EB] rounded-lg px-8 pt-12 pb-8  my-12'>
+      <div className="flex items-center justify-center mb-4">
+      <div className="flex items-center gap-1">
+      <div className="h-16 w-16 rounded-full overflow-hidden bg-[#EED6CB]">
+        <img src="/ladies/lady_1.png" className="object-cover w-full mt-3.5" alt="" />
+      </div>
+      <div className="h-16 w-16 rounded-full overflow-hidden bg-[#EED6CB]">
+        <img src="/ladies/lady_3.png" className="object-cover w-full mt-3.5" alt="" />
+      </div>
+      <div className="h-16 w-16 rounded-full overflow-hidden bg-[#EED6CB]">
+        <img src="/ladies/lady_2.png" className="object-cover w-full mt-2" alt="" />
+      </div>
+        </div>
+      </div>
         <Headline text="Let's tackle your NDIS plan together!" />
         <div className='max-w-xs mx-auto'>
         <Paragraph paragraph='Got questions or concerns? Chat with a Kindship Coach today!' /></div>
        <div className="flex my-6">
-       <Link href="#" type="submit" className={ "max-w-sm py-3 mx-auto w-full flex items-center justify-center bg-primary text-white rounded-md mt-10 font-semibold text-[19px]" }>
-          Open Support
+       <Link href="#" type="submit" className={ "max-w-sm py-3 mx-auto w-full flex items-center justify-center bg-primary text-white rounded-md mt-4 font-semibold text-[19px]" }>
+          Open Support <span className='pl-2'><ArrowUp /></span>
         </Link>
 
         </div>
