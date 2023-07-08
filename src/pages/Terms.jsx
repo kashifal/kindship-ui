@@ -1,13 +1,14 @@
+import Link from "next/link";
 import React from "react";
 
 const Terms = () => {
   return (
     <div>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="12"
-          height="20"
+          width="8"
+          height="16"
           fill="none"
           viewBox="0 0 12 20"
         >
@@ -17,6 +18,7 @@ const Terms = () => {
           ></path>
         </svg>
         <h1 className="text-primary text-[17px] font-normal">Back</h1>
+        <Link href="/Signup" className="absolute w-full h-full top-0 left-0"> </Link>
       </div>
 
       <h1 className="text-[30px] pt-4 text-primary font-bold">Service Agreement</h1>

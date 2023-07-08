@@ -82,7 +82,7 @@ span, p, label
 .swiper-slide-active{
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  background: #fff; 
   height: 340px !important;
   border:1px solid #DB734C; 
   display: flex;
@@ -158,4 +158,24 @@ flex-shrink: 0;
     height: 30px;
     border-radius: 100px;
     background:  lightgray -151.394px -0.182px / 483.653% 245.138% no-repeat;
+  }
+
+
+  @media all and (max-width: 700px){
+    .swiper-slide-active{
+      text-align: center;
+      font-size: 18px;
+      background: #fff; 
+      width: 280px !important;
+      height: 340px !important;
+      border:1px solid #DB734C; 
+      display: flex;
+      justify-content: center;
+      margin-top: 0px !important;
+      align-items: center;
+      border-radius: 20px;
+    }
+
+
+   
   }

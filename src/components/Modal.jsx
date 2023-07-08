@@ -26,7 +26,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
         </Transition.Child>
 
         <div className="fixed inset-0 z-10 overflow-y-auto">
-          <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
+          <div className="flex min-h-full items-center justify-center p-4 text-center sm:items-center sm:p-0">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -68,7 +68,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                         >
                           Premium Supports
                         </Dialog.Title>
-                        <div className="mt-2">
+                        <div onClose={setIsModalOpen} className="mt-2">
                           <p className=" word-break text-[#8A8A8E] font-normal text-[16px] text-center">
                             Our support team (AKA "coaches") are parents who
                             live and breathe disability. We'll help you make the
