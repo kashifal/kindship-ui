@@ -40,7 +40,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                 {index === 0 ? (
                   <div className=" py-6">
                     <div className="flex items-center justify-end">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg onClick={() => lastIndexOf()} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1231 4.8741C16.5136 4.48357 16.5136 3.85041 16.1231 3.45989C15.7326 3.06936 15.0994 3.06936 14.7089 3.45989L9.79102 8.37778L4.87312 3.45989C4.4826 3.06936 3.84943 3.06936 3.45891 3.45989C3.06838 3.85041 3.06838 4.48357 3.45891 4.8741L8.3768 9.79199L3.45891 14.7099C3.06839 15.1004 3.06839 15.7336 3.45891 16.1241C3.84943 16.5146 4.4826 16.5146 4.87312 16.1241L9.79102 11.2062L14.7089 16.1241C15.0994 16.5146 15.7326 16.5146 16.1231 16.1241C16.5136 15.7336 16.5136 15.1004 16.1231 14.7099L11.2052 9.79199L16.1231 4.8741Z" fill="black" />
                       </svg>
 
@@ -98,7 +98,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                 ) : index === 1 ? (
                   <div className="py-6">
                       <div className="flex items-center justify-end">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg onClick={() => lastIndexOf()} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1231 4.8741C16.5136 4.48357 16.5136 3.85041 16.1231 3.45989C15.7326 3.06936 15.0994 3.06936 14.7089 3.45989L9.79102 8.37778L4.87312 3.45989C4.4826 3.06936 3.84943 3.06936 3.45891 3.45989C3.06838 3.85041 3.06838 4.48357 3.45891 4.8741L8.3768 9.79199L3.45891 14.7099C3.06839 15.1004 3.06839 15.7336 3.45891 16.1241C3.84943 16.5146 4.4826 16.5146 4.87312 16.1241L9.79102 11.2062L14.7089 16.1241C15.0994 16.5146 15.7326 16.5146 16.1231 16.1241C16.5136 15.7336 16.5136 15.1004 16.1231 14.7099L11.2052 9.79199L16.1231 4.8741Z" fill="black" />
                       </svg>
 
@@ -164,7 +164,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                 ) : index === 2 ? (
                   <div className="py-6">
                      <div className="flex items-center justify-end">
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <svg onClick={() => lastIndexOf()} width="15" height="15" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.1231 4.8741C16.5136 4.48357 16.5136 3.85041 16.1231 3.45989C15.7326 3.06936 15.0994 3.06936 14.7089 3.45989L9.79102 8.37778L4.87312 3.45989C4.4826 3.06936 3.84943 3.06936 3.45891 3.45989C3.06838 3.85041 3.06838 4.48357 3.45891 4.8741L8.3768 9.79199L3.45891 14.7099C3.06839 15.1004 3.06839 15.7336 3.45891 16.1241C3.84943 16.5146 4.4826 16.5146 4.87312 16.1241L9.79102 11.2062L14.7089 16.1241C15.0994 16.5146 15.7326 16.5146 16.1231 16.1241C16.5136 15.7336 16.5136 15.1004 16.1231 14.7099L11.2052 9.79199L16.1231 4.8741Z" fill="black" />
                       </svg>
 
