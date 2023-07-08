@@ -34,7 +34,7 @@ const verifyEmail = ({getIndex,formCount}) => {
                 onChange={(e) =>
                   setNameForm({ ...nameForm, email: e.target.value })
                 }
-                className="block w-full pr-8 text-[19px] leading-[24px] placeholder:text-[rgba(60, 60, 67, 0.60)]  border-b border-[#C6C6C8] py-1.5 pl-24 text-gray-900 z-20 relative placeholder:text-[19px]    sm:text-sm sm:leading-6 focus:outline-none"
+                className="block w-full pr-8 text-[19px] leading-[24px] placeholder:text-[rgba(60, 60, 67, 0.60)]  border-b border-[#C6C6C8] py-1.5 pl-24 text-gray-900 z-20 relative placeholder:text-[17px]    sm:text-sm sm:leading-6 focus:outline-none"
                 placeholder="What’s your email?"
               />
               <div

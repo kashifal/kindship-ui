@@ -64,12 +64,12 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                       <div className="mt-3 text-center sm:mt-5">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900"
+                          className="text-[21px] font-semibold leading-6 text-gray-900"
                         >
                           Premium Supports
                         </Dialog.Title>
                         <div className="mt-2">
-                          <p className="text-sm word-break text-[#8A8A8E] font-normal text-[21px] text-center">
+                          <p className=" word-break text-[#8A8A8E] font-normal text-[16px] text-center">
                             Our support team (AKA "coaches") are parents who
                             live and breathe disability. We'll help you make the
                             most of the NDIS!
@@ -124,12 +124,12 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                       <div className="mt-3 text-center sm:mt-5">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900"
+                          className="text-[21px] font-semibold leading-6 text-gray-900"
                         >
                           Fast Payments
                         </Dialog.Title>
                         <div className="mt-2">
-                          <p className="text-sm text-[#8A8A8E] font-normal text-[21px] text-center">
+                          <p className="text-sm text-[#8A8A8E] font-normal text-[16px] text-center">
                             We're all about fast painless plan management
                             because we know you've got more important things to
                             do.
@@ -168,12 +168,12 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
                       <div className="mt-3 text-center sm:mt-5">
                         <Dialog.Title
                           as="h3"
-                          className="text-base font-semibold leading-6 text-gray-900"
+                          className="text-[21px] font-semibold leading-6 text-gray-900"
                         >
                           Free Resources
                         </Dialog.Title>
                         <div className="mt-2">
-                          <p className="text-sm text-[#8A8A8E] font-normal text-[21px] text-center">
+                          <p className="text-sm text-[#8A8A8E] font-normal text-[16px] text-center">
                           Become the best advocate you can be! We've crowdsourced the very best advice and support tools from families kicking NDIS goals.
                           </p>
                         </div>
