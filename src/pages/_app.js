@@ -8,8 +8,8 @@ export default function App({ Component, pageProps }) {
  
   return (
     <Fragment>
-      <div className="max-w-7xl mx-auto py-16 flex sm:px-8 px-3">
-      <div className="w-96 md:block hidden mt-6">
+      <div className="max-w-7xl mx-auto py-12 flex sm:px-8 px-3">
+      <div className="w-96 md:block hidden mt-10">
         <div>
           <Link href='/'>
           <Logo />

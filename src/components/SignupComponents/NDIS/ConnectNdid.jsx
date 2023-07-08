@@ -83,7 +83,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                       </span>
                     </div>
                     <input
-                      type="text"
+                      type="date"
                       name="phone"
                       value={ndForm.dob}
                       required={true}
@@ -133,7 +133,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                       </span>
                     </div>
                     <input
-                      type="text"
+                      type="number"
                       name="phone"
                       value={ndForm.ndis}
                       required={true}
