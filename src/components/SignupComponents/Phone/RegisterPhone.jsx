@@ -41,7 +41,7 @@ const RegisterPhone = ({getIndex, formCount}) => {
                       </span>
                     </div>
                     <input
-                      type="text"
+                      type="tel"
                       name="phone"
                       value={phoneForm.phone}
                       required={true}
