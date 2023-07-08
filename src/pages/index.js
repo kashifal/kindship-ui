@@ -28,9 +28,7 @@ export default function Home() {
           </div>
 
           <div className="flex my-8">
-          <button onClick={() => setModal(true)} className="w-full sm:max-w-sm sm:px-32 tracking-wide whitespace-nowrap text-[19px] font-semibold text-center rounded-md text-white mx-auto py-4 inline-block bg-primary" >
-            <span className="">Learn More</span>
-          </button>
+          <button onClick={() => setModal(true)} className="px-24 md:px-32 tracking-wide text-[19px] font-semibold text-center rounded-md text-white mx-auto py-4 inline-block bg-primary whitespace-nowrap" >Learn More</button>
           </div>
           <div className="max-w-xs mx-auto">
           <span className="block text-center text-[#8A8A8E] text-[19px] font-normal">

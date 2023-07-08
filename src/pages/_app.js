@@ -42,10 +42,19 @@ export default function App({ Component, pageProps }) {
 
 
       {/* Main Content */}
-      <div className="w-full p-8 overflow-scroll rounded-md bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
+      <div className="w-full p-4 sm:p-8 overflow-scroll rounded-md bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
         <Component {...pageProps} />
       </div>
+      
       </div>
+      <div className="ml-8 block sm:hidden">
+          <p className="pb-2">2023 kindship</p>
+          <div className=" gap-4">
+          <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">About app</Link>
+          <Link href="#" className="font-normal text-poppins pl-3 text-[14px] text-[#767678]">Privacy Policy</Link> <br />
+          <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">Terms</Link>
+          </div>
+        </div>
     </Fragment>
   );
 }

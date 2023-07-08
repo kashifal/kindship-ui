@@ -35,7 +35,7 @@ const Support = () => {
     </svg>
 
     <h1 className="text-[21px]  pt-6 font-semibold">Payment Provider</h1>
-    <p className="text-[19px] text-[#000]">Coming soon</p>
+    <p className="text-[19px] text-[#8A8A8E]">Coming soon</p>
        </div>
        <div className="rounded-lg ring-1 px-5 py-4 ring-gray-200">
        <svg
@@ -53,7 +53,7 @@ const Support = () => {
     </svg>
 
     <h1 className="text-[21px] text-[21px]  pt-6 font-semibold font-semibold">Personalised templates</h1>
-    <p className="text-[19px] text-[#000]">Coming soon</p>
+    <p className="text-[19px] text-[#8A8A8E]">Coming soon</p>
        </div>
 
 

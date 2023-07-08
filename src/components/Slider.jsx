@@ -84,11 +84,11 @@ export default function App() {
             spaceBetween: 20,
           },
           640: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           1024: {
@@ -103,28 +103,17 @@ export default function App() {
               className={`relative ${index === activeIndex  ? "" : ""}`}
               onMouseEnter={() => handleMouseEnter(index)}
               onMouseLeave={() => handleMouseLeave(index)}
+              style={{ width: "100%", height: "100%" }} // Set container to full width and height
             >
               <video
                 autoPlay={index === activeIndex }
                 muted
                 playsInline
                 loop={false}
-                className={`video-slide bg-top bg-contain object-contain	h-full video-slide-${index}`}
-                style={
-                  index === activeIndex 
-                    ? {
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "contain",
-                        opacity: "1",
-                      }
-                    : {
-                        width: "100%",
-                        height: "auto",
-                        objectFit: "contain",
-                        opacity: "0.6",
-                      }
-                }
+                className={`video-slide md:w-full bg-top bg-cover object-cover md:h-full video-slide-${index}`}
+                style={{ 
+                  opacity: index === activeIndex ? "1" : "0.6",
+                }}
               >
                 <source className="object-cover" src={video.link} />
               </video>
