@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import { Fragment, useState } from "react";
 import Slider from "@/components/Slider";
 import Modal from "@/components/Modal";
-import Link from "next/link";
-import Timer from "@/components/Timer";
+import Link from "next/link"; 
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -43,8 +42,7 @@ export default function Home() {
             </span>
           </div>
         </div>
-<Timer />
-ll
+ 
         <Modal isModalOpen={modal} setIsModalOpen={setModal} inital={inital} />
       </main>
     </Fragment>
