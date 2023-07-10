@@ -44,7 +44,7 @@ export default function App({ Component, pageProps }) {
 
 
       {/* Main Content */}
-      <div className="w-full p-4 sm:p-8 overflow-scroll sm:rounded-xl bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
+      <div className="w-full sm:p-8 overflow-scroll sm:rounded-xl bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
         <Component {...pageProps} />
       </div>
       

@@ -15,7 +15,7 @@ export default function Home() {
     <Fragment>
       <main>
         <Slider />
-        <div>
+        <div className="px-4">
           <div className="max-w-sm mx-auto my-4">
             <h1 className="text-[30px] font-semibold text-primary leading-snug	 text-center">
               You were never meant <br /> to do this alone!
@@ -43,7 +43,8 @@ export default function Home() {
             </span>
           </div>
         </div>
-
+<Timer />
+ll
         <Modal isModalOpen={modal} setIsModalOpen={setModal} inital={inital} />
       </main>
     </Fragment>
