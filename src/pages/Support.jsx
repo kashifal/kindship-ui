@@ -12,6 +12,7 @@ const Support = () => {
   return (
     <Fragment>
       
+       <div className="p-4 sm:p-0">
        <div className="flex flex-col py-12 px-8">
         <div className='mx-auto'><RoundLogo /></div>
         <h1 className="text-primary text-center text-[30px] font-bold">Kindship Premium</h1>
@@ -86,6 +87,7 @@ const Support = () => {
         </div>
         </div>
          
+       </div>
   
     </Fragment>
   )

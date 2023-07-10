@@ -3,7 +3,7 @@ import React from "react";
 
 const Terms = () => {
   return (
-    <div>
+    <div className="p-4 ">
       <div className="flex items-center gap-2 relative">
         <svg
           xmlns="http://www.w3.org/2000/svg"

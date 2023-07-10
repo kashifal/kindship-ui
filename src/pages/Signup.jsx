@@ -19,7 +19,7 @@ const Signup = () => {
 
   return (
     <Fragment>
-      <div className=''>
+      <div className='p-4 md:p-0'>
         {
           formCount === 0 ?   <RegisterPhone getIndex={getIndex} formCount={formCount} /> : formCount === 1 ? <NameForm formCount={formCount} getIndex={getIndex} /> : formCount === 2 ? <VerifyEmail getIndex={getIndex} formCount={formCount} /> : formCount === 3 ? <ConnectNdis getIndex={getIndex} formCount={formCount} /> : formCount === 4 ? <TariffPlan formCount={formCount} /> : ''
         } 
