@@ -36,7 +36,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, inital }) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl bg-white px-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:px-16 pb-6">
+              <Dialog.Panel className="relative transform overflow-hidden rounded-3xl bg-white px-4 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:px-10 pb-6">
                 {index === 0 ? (
                   <div className=" py-6">
                     <div className="flex items-center justify-end">

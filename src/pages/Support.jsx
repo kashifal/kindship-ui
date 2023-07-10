@@ -13,14 +13,14 @@ const Support = () => {
     <Fragment>
       
        <div className="p-4 sm:p-0">
-       <div className="flex flex-col py-12 px-8">
+       <div className="flex flex-col pt-8 pb-12 px-8">
         <div className='mx-auto'><RoundLogo /></div>
         <h1 className="text-primary text-center text-[30px] font-bold">Kindship Premium</h1>
         <Paragraph paragraph="We've started working with you right now!" />
        </div>
 
     <div className="grid sm:grid-cols-2 grid-cols-1 gap-3 ">
-    <div className="rounded-lg ring-1 px-5 py-4 ring-gray-200">
+    <div className="rounded-3xl ring-1 px-5 py-4 ring-gray-200">
        <svg
       xmlns="http://www.w3.org/2000/svg"
       width="52"
@@ -38,7 +38,7 @@ const Support = () => {
     <h1 className="text-[21px]  pt-6 font-semibold">Payment Provider</h1>
     <p className="text-[19px] text-[#8A8A8E]">Coming soon</p>
        </div>
-       <div className="rounded-lg ring-1 px-5 py-4 ring-gray-200">
+       <div className="rounded-3xl ring-1 px-5 py-4 ring-gray-200">
        <svg
       xmlns="http://www.w3.org/2000/svg"
       width="62"
@@ -62,7 +62,7 @@ const Support = () => {
 
 
 
-       <div className='bg-[#FBF0EB] rounded-lg px-8 pt-12 pb-8  my-12'>
+       <div className='bg-[#FBF0EB] rounded-3xl px-8 pt-12 pb-8  my-12'>
       <div className="flex items-center justify-center mb-4">
       <div className="flex items-center gap-1">
       <div className="h-16 w-16 rounded-full overflow-hidden bg-[#EED6CB]">
