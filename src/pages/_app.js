@@ -8,7 +8,7 @@ export default function App({ Component, pageProps }) {
  
   return (
     <Fragment>
-      <div className="max-w-7xl mx-auto py-12 flex sm:px-8 px-3">
+      <div className="max-w-[1070px] mx-auto sm:py-12 flex sm:px-8 ">
       <div className="w-96 md:block hidden mt-10">
         <div>
           <Link href='/'>
@@ -21,7 +21,9 @@ export default function App({ Component, pageProps }) {
         </div>
 
         <div className="mt-44">
+          <div className="bg-white w-fit p-2 rounded-lg">
           <QRCode />
+          </div>
           <h1 className="text-[15px] text-poppins font-semibold pt-4">
             Scan the QR code <br />
             and Explore our app
@@ -42,12 +44,12 @@ export default function App({ Component, pageProps }) {
 
 
       {/* Main Content */}
-      <div className="w-full p-4 sm:p-8 overflow-scroll rounded-md bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
+      <div className="w-full p-4 sm:p-8 overflow-scroll rounded-lg bg-white shadow-sm ring-1 ring-gray-200 h-full min-h-[40vh]">
         <Component {...pageProps} />
       </div>
       
       </div>
-      <div className="ml-8 block sm:hidden">
+      <div className="ml-8 mt-8 block sm:hidden">
           <p className="pb-2">2023 kindship</p>
           <div className=" gap-4">
           <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">About app</Link>

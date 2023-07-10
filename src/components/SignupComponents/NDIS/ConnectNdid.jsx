@@ -2,6 +2,7 @@ import React, { Fragment, useState } from "react";
 import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import Link from "next/link";
+import Return from "@/components/Return";
 
 const ConnectNdis = ( {getIndex,formCount}) => {
   const [ndForm, setNdForm] = useState({
@@ -17,6 +18,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
   return (
     <Fragment>
       <div className={formCount === 3 ? "block" : "hidden"}>
+      <Return text="Back" />
         <div>
           <div className="">
             <Headline text="This'll just take a minute." />
@@ -28,7 +30,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                 <div>
                   <div className="relative mt-2  ">
                     <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                      <span className="font-normal">
+                      <span className="font-normal text-[17px] tracking-wider">
                         <span className="pl-2">Last name</span>
                       </span>
                     </div>
@@ -78,7 +80,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                 <div>
                   <div className="relative mt-2  ">
                     <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                      <span className="font-normal">
+                      <span className="font-normal text-[17px] tracking-wider">
                         <span className="pl-2">Date of birth</span>
                       </span>
                     </div>
@@ -128,7 +130,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                 <div>
                   <div className="relative mt-2  ">
                     <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                      <span className="font-normal">
+                      <span className="font-normal text-[17px] tracking-wider">
                         <span className="pl-2">NDIS number</span>
                       </span>
                     </div>
@@ -178,7 +180,7 @@ const ConnectNdis = ( {getIndex,formCount}) => {
                   able to add more children later.
                 </p>
 
-                <button   type="submit" className={ndForm.ndis === '' ?  "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md mt-10 font-semibold text-[19px]" : "w-full py-3 bg-primary text-white rounded-md mt-10 font-semibold text-[19px]"}>Agree and continue</button>
+                <button   type="submit" className={ndForm.ndis === '' ?  "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-lg mt-10 font-semibold text-[19px]" : "w-full py-3 bg-primary text-white rounded-lg mt-10 font-semibold text-[19px]"}>Agree and continue</button>
 
                 <p className="text-black text-[15px] text-center font-normal pt-4">
                 By tapping "Agree and continue" you agree to our

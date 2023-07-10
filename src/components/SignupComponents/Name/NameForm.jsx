@@ -2,22 +2,23 @@ import React, { useState } from "react";
 import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import { useForm } from "react-hook-form";
+import Return from "@/components/Return";
 
-const NameForm = ({getIndex, formCount}) => {
+const NameForm = ({ getIndex, formCount }) => {
   const [nameForm, setNameForm] = useState({
     fname: "",
     lname: "",
   });
 
-
-
-  const handleSubmit  = () => {
+  const handleSubmit = () => {
     getIndex(2);
-    console.log('form added');
-  }
+    console.log("form added");
+  };
 
   return (
     <div className={formCount === 1 ? "block" : "hidden"}>
+            <Return text="Back" />
+
       <Headline text="Welcome! We're so happy you're here." />
       <Paragraph paragraph="What should we call you?" />
       <form onSubmit={() => handleSubmit()}>
@@ -25,7 +26,7 @@ const NameForm = ({getIndex, formCount}) => {
           <div>
             <div className="relative mt-2  ">
               <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                <span className="font-normal">First name</span>
+                <span className="font-normal text-[17px] tracking-wider">First name</span>
               </div>
               <input
                 type="text"
@@ -108,10 +109,20 @@ const NameForm = ({getIndex, formCount}) => {
                 </svg>
               </div>
             </div>
-            <p className="text-[#8A8A8E] text-[15px] pt-1 font-normal">Last name is optional</p>
+            <p className="text-[#8A8A8E] text-[15px] pt-1 font-normal">
+              Last name is optional
+            </p>
 
-
-            <button type="submit" className={nameForm.fname && nameForm.lname ? "w-full py-3 bg-primary text-white rounded-md mt-10 font-semibold text-[19px]" : "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md mt-10 font-semibold text-[19px]"}>Next</button>
+            <button
+              type="submit"
+              className={
+                nameForm.fname && nameForm.lname
+                  ? "w-full py-3 bg-primary text-white rounded-lg mt-10 font-semibold text-[19px]"
+                  : "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-lg mt-10 font-semibold text-[19px]"
+              }
+            >
+              Next
+            </button>
           </div>
         </div>
       </form>

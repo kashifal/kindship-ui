@@ -2,29 +2,36 @@ import React, { useState } from "react";
 import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import { useForm } from "react-hook-form";
+import Return from "@/components/Return";
 
-const verifyEmail = ({getIndex,formCount}) => {
+const verifyEmail = ({ getIndex, formCount }) => {
   const [nameForm, setNameForm] = useState({
-    email:''
+    email: "",
   });
 
-
-
-  const handleSubmit  = () => {
-    getIndex(3)
-  }
+  const handleSubmit = () => {
+    getIndex(3);
+  };
 
   return (
     <div className={formCount === 2 ? "block" : "hidden"}>
+      <Return text="Back" />
+
       <Headline text="What's your email?" />
-      <Paragraph paragraph="We'll send you a copy of the service agreement. 
-(And important emails now and then)" />
+      <div className="max-w-sm sm:mx-auto py-4">
+        <Paragraph
+          paragraph="We'll send you a copy of the service agreement. 
+(And important emails now and then)"
+        />
+      </div>
       <form onSubmit={() => handleSubmit()}>
         <div className="max-w-md mx-auto pt-4">
           <div>
             <div className="relative mt-2  ">
               <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                <span className="font-normal">Email</span>
+                <span className="font-normal text-[17px] tracking-wider">
+                  Email
+                </span>
               </div>
               <input
                 type="email"
@@ -63,11 +70,21 @@ const verifyEmail = ({getIndex,formCount}) => {
                 </svg>
               </div>
             </div>
-            <p className="text-[#FB3131] text-[15px] pt-1 ">Oops, that doesn't look right. Please try again</p>
+            <p className="text-[#FB3131] text-[15px] pt-1 hidden">
+              Oops, that doesn't look right. Please try again
+            </p>
           </div>
-          <button type="submit" className={nameForm.email ? "w-full py-3 bg-primary text-white rounded-md mt-10 font-semibold text-[19px]" : "w-full py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md  mt-10 font-semibold text-[19px]"}>Next</button>
+          <button
+            type="submit"
+            className={
+              nameForm.email
+                ? "w-full py-3 bg-primary text-white rounded-lg mt-10 font-semibold text-[19px]"
+                : "w-full transition-all duration-300 py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-lg  mt-10 font-semibold text-[19px]"
+            }
+          >
+            Next
+          </button>
         </div>
-       
       </form>
     </div>
   );

@@ -80,7 +80,7 @@ export default function App() {
         onSlideChange={handleSlideChange}
         breakpoints={{
           260: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 20,
           },
           640: {
@@ -110,15 +110,15 @@ export default function App() {
                 muted
                 playsInline
                 loop={false}
-                className={`video-slide md:w-full bg-top bg-cover object-cover md:h-full video-slide-${index}`}
+                className={`video-slide w-full bg-top bg-cover object-cover h-full video-slide-${index}`}
                 style={{ 
                   opacity: index === activeIndex ? "1" : "0.6",
                 }}
               >
                 <source className="object-cover" src={video.link} />
               </video>
-              <div className="absolute linear px-6 w-full bottom-0">
-                <h1 className="text-white text-xl text-left font-bold">
+              <div  className={`${ index === activeIndex ? "block" : "hidden"} absolute linear sm:px-6 px-2 w-full bottom-0`}>
+                <h1 className="text-white text-xl whitespace-nowrap text-left font-bold">
                   {video.name}
                 </h1>
                 <p className="text-left text-white">{video.rank}</p>
