@@ -3,6 +3,7 @@ import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
+import Return from "@/components/Return";
 
 const TariffPlan = () => {
   const [selectedPlans, setSelectedPlans] = useState([]);
@@ -29,6 +30,8 @@ const TariffPlan = () => {
 
   return (
     <div className="">
+      <Return text="Back" />
+
       <div className="max-w-md pb-4 mx-auto">
         <Headline text="Thanks! Tell us, how are you currently managing your plan?" />
       </div>
@@ -51,7 +54,7 @@ const TariffPlan = () => {
             ))}
           </div>
         </fieldset>
-        <button type="submit" className={selectedPlans.length !== 0 ? "w-full relative py-3 bg-primary text-white rounded-md mt-10 font-semibold text-[19px]" : "w-full relative py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-md mt-10 font-semibold text-[19px]"}>
+        <button type="submit" className={selectedPlans.length !== 0 ? "w-full relative py-3 bg-primary text-white rounded-lg mt-10 font-semibold text-[19px]" : "w-full relative py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-lg mt-10 font-semibold text-[19px]"}>
 
           <Link className="absolute top-0 left-0 w-full h-full" href="/Support"></Link>
           Next

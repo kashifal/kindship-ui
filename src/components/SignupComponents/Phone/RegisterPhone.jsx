@@ -2,23 +2,14 @@ import React, { Fragment, useEffect, useState } from "react";
 import Headline from "@/components/Headline";
 import Paragraph from "@/components/Paragraph";
 import Input from "@/components/Input";
-import VerifyPhone from "./VerifyPhone";
-
+import VerifyPhone from "./VerifyPhone"; 
+import Return from "@/components/Return";
 const RegisterPhone = ({getIndex, formCount}) => {
   const [phoneForm, setPhoneForm] = useState({
     phone: "",
   });
 
-
-
-  useEffect(() => {
-   
-    setTimeout(() => {
-      getIndex(1)
-    }, 6000)
-  
-  },[phoneForm.phone])
-
+ 
 
 
 
@@ -27,16 +18,19 @@ const RegisterPhone = ({getIndex, formCount}) => {
       <div>
         <div>
           <div className={formCount === 0 ? "block" : "hidden"}>
+            <Return text="Premium" />
             <Headline text="Hey there! What's your number?" />
             <div className="max-w-2xl  mx-auto py-4">
+              <div className="max-w-2xl mx-auto">
               <Paragraph paragraph="Yep, we ask for it straight away. This helps us weed out the weirdos and keep you and your data safe. We'll send you an SMS message to double check we've got it right." />
+              </div>
             </div>
             <form onSubmit={() => handleSubmit()}>
               <div className="max-w-md mx-auto pt-4">
                 <div>
                   <div className="relative mt-2  ">
                     <div className="pointer-events-none absolute z-50 inset-y-0 left-0 flex items-center ">
-                      <span className="font-normal">
+                      <span className="font-normal text-[17px] tracking-wider">
                         🇦🇺 <span className="pl-2">+91</span>
                       </span>
                     </div>
@@ -79,8 +73,10 @@ const RegisterPhone = ({getIndex, formCount}) => {
                       </svg>
                     </div>
                   </div>
-                  <p className="text-[#FB3131] text-[15px] pt-1 ">Oops, that doesn't look right. Please try again</p>
+                  <p className="text-[#FB3131] text-[15px] pt-1 hidden">Oops, that doesn't look right. Please try again</p>
+
                 </div>
+                <button onClick={() => getIndex(1)} type="submit" className={phoneForm.phone ? "w-full py-3 bg-primary text-white rounded-lg mt-10 font-semibold text-[19px]" : "w-full transition-all duration-300 py-3 bg-[#F2F2F7] text-[#9B9B9B] rounded-lg  mt-10 font-semibold text-[19px]"}>Next</button>
               </div>
             </form>
           </div>

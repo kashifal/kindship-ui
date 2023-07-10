@@ -79,7 +79,7 @@ const Support = () => {
         <div className='max-w-xs mx-auto'>
         <Paragraph paragraph='Got questions or concerns? Chat with a Kindship Coach today!' /></div>
        <div className="flex my-6">
-       <Link href="#" type="submit" className={ "max-w-sm py-3 mx-auto w-full flex items-center justify-center bg-primary text-white rounded-md mt-4 font-semibold text-[19px]" }>
+       <Link href="#" type="submit" className={ "max-w-sm py-3 mx-auto w-full flex items-center justify-center bg-primary text-white rounded-lg mt-4 font-semibold text-[19px]" }>
           Open Support <span className='pl-2'><ArrowUp /></span>
         </Link>
 
