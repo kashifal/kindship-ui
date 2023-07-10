@@ -16,12 +16,12 @@ export default function Home() {
         <Slider />
         <div className="px-4">
           <div className="max-w-sm mx-auto my-4">
-            <h1 className="text-[30px] font-semibold text-primary leading-snug	 text-center">
+            <h1 className="text-[30px] font-semibold text-primary leading-8	 text-center">
               You were never meant <br /> to do this alone!
             </h1>
           </div>
           <div className="max-w-lg mx-auto mb-8 ">
-            <p className="text-[21px] text-center font-normal">
+            <p className="text-[21px] text-center font-normal leading-7">
               Let's make the most of your NDIS journey. Choose Kindship as your
               Plan Manager and we'll walk with you every step of the way.
             </p>
