@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }) {
 
 
         <div className="mt-24">
-          <p className="pb-2 text-[13px]">© 2023 Kindship</p>
+          <p className="pb-2 text-[13px]">Build with ❤️ by Kashif Sullehria</p>
           <div className="gap-4">
           <Link href="#" className="font-normal text-poppins text-[14px] text-[#767678]">About app</Link>
           <Link href="#" className="font-normal text-poppins pl-3 text-[14px] text-[#767678]">Privacy Policy</Link> <br />
